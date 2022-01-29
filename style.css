@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+.html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #010403;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.primary-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.secondary-title {
+  font-size: 16px;
+}
+
+.container {
+  padding: 0 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.header {
+  font-size: 14px;
+}
+
+.main-photo {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header .secondary-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header .phrase {
+  line-height: 20px;
+}
+
+.header ul {
+  margin: 3px 0;
+  padding-left: 24px;
+}
+
+.section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.salty-pizza,
+.drinks {
+  color: #cfd15d;
+}
+
+.salty-pizza ul,
+.candy-pizza ul,
+.drinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.salty-pizza ul li {
+  margin: 4px 0;
+}
+
+.salty-pizza .pizza {
+  position: absolute;
+  width: 300px;
+  right: -200px;
+  top: 52%;
+  transform: translateY(-48%);
+}
+
+.candy-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 130px 0;
+}
+
+.candy-pizza ul li {
+  margin: 4px 0;
+}
+
+.candy-pizza .pizza {
+  position: absolute;
+  width: 300px;
+  left: -230px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.drinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
