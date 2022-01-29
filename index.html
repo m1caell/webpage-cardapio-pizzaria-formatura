@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
     <title>Website Formatura Pablo e Karina</title>
   </head>
   <body>
@@ -16,7 +15,7 @@
     />
     <div class="container">
       <header class="header">
-        <h2 class="secondary-title">Obrigado pela presença!</h2>
+        <h1 class="primary-title">Obrigado pela presença!</h1>
         <p class="paragraph">Nosso dia não seria tão especial sem você!</p>
         <div class="phrase">
           Siga as instruções abaixo e divirta-se:
@@ -33,11 +32,16 @@
         </div>
       </header>
       <main class="main">
-        <h1 class="primary-title">Sequência de pizzas</h1>
+        <h2 class="primary-title">Cardápio</h2>
         <section class="section salty-pizza">
-          <img src="./assets/pizza.svg" alt="Pizza" class="pizza" />
+          <img
+            id="saltyPizza"
+            src="./assets/pizza.svg"
+            alt="Pizza"
+            class="pizza"
+          />
           <ul>
-            <h2 class="secondary-title">Salgadas</h2>
+            <h2 class="secondary-title">Pizzas salgadas</h2>
             <li>Frango com catupiry</li>
             <li>Tomate com manjericão</li>
             <li>Coração</li>
@@ -53,9 +57,14 @@
           </ul>
         </section>
         <section class="section candy-pizza">
-          <img src="./assets/pizza.svg" alt="Pizza" class="pizza" />
+          <img
+            id="candyPizza"
+            src="./assets/pizza.svg"
+            alt="Pizza"
+            class="pizza"
+          />
           <ul>
-            <h2 class="secondary-title">Doces</h2>
+            <h2 class="secondary-title">Pizzas doces</h2>
             <li>Sorvete com ganache</li>
             <li>Chocolate preto com morango</li>
             <li>Chocolate branco com confete</li>
@@ -63,16 +72,37 @@
           </ul>
         </section>
         <section class="section drinks">
-          <ul>
-            <h2 class="secondary-title">Bebidas</h2>
-            <li>Chopp</li>
-            <li>Água</li>
-            <li>Água c/ gás</li>
-          </ul>
-          <img src="./assets/chopp-grass.svg" alt="Pizza" class="glass" />
+          <div class="drinks-content">
+            <ul>
+              <h2 class="secondary-title">Bebidas</h2>
+              <li>Chopp</li>
+              <li>Água</li>
+              <li>Água c/ gás</li>
+            </ul>
+            <img src="./assets/chopp-grass.svg" alt="Pizza" class="glass" />
+          </div>
+          <div class="phrase">
+            Obs.: Demais bebidas podem ser <strong>pagas</strong> e retiradas no
+            bar.
+          </div>
+        </section>
+        <section class="section map">
+          <h2 class="secondary-title">Localização do AFTER.</h2>
+          <a
+            href="https://www.google.com.br/maps/dir/Pizzaria+do+Vov%C3%B4+-+Avenida+Doutor+Bruno+Cassel,+R.+do+Angico,+49,+S%C3%A3o+Sebasti%C3%A3o+do+Ca%C3%AD+-+RS,+95760-000/Rua+S%C3%A3o+Louren%C3%A7o,+501,+S%C3%A3o+Sebasti%C3%A3o+do+Ca%C3%AD+-+RS/@-29.5950185,-51.378056,16z/data=!4m19!4m18!1m10!1m1!1s0x951bfdc025a32e2f:0xfd6df51b57bc1389!2m2!1d-51.3682837!2d-29.5976584!3m4!1m2!1d-51.3797131!2d-29.5914952!3s0x951bfdd06d8d1e0d:0xbca61ed2e0bd9f16!1m5!1m1!1s0x951bfdd02f980547:0xfdff64818948e257!2m2!1d-51.3805283!2d-29.5930003!3e0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/mapa.png"
+              alt="Print de um mapa com rota marcada"
+            />
+          </a>
         </section>
       </main>
       <footer class="footer"></footer>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

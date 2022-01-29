@@ -46,7 +46,7 @@ img {
   margin: 0 auto;
 }
 
-.header .secondary-title {
+.header .primary-title {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -87,6 +87,7 @@ img {
   right: -200px;
   top: 52%;
   transform: translateY(-48%);
+  animation: rotate-regular 40s linear infinite;
 }
 
 .candy-pizza {
@@ -106,10 +107,40 @@ img {
   left: -230px;
   top: 50%;
   transform: translateY(-50%);
+  animation: rotate-invert 30s linear infinite;
 }
 
-.drinks {
+.drinks-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.drinks .phrase {
+  margin-top: 50px;
+}
+
+.map .secondary-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@keyframes rotate-regular {
+  from {
+    transform: translateY(-48%) rotate(0);
+  }
+
+  to {
+    transform: translateY(-48%) rotate(360deg);
+  }
+}
+
+@keyframes rotate-invert {
+  from {
+    transform: translateY(-50%) rotate(0);
+  }
+
+  to {
+    transform: translateY(-50%) rotate(-360deg);
+  }
 }
